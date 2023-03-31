@@ -4,9 +4,9 @@
 
 @section('content')
 
-    <h1 class="text-center mb-3 title" >Restaurant Menu</h1>
+    <h1 class="text-center mb-3 title">Restaurant Menu</h1>
 
-    <div class="accordion" id="accordionPanelsStayOpenExample">
+    <div class="accordion mb-3" id="accordionPanelsStayOpenExample">
         <div class="accordion-item">
             <h2 class="accordion-header" id="panelsStayOpen-headingOne">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -18,11 +18,70 @@
             <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
                 aria-labelledby="panelsStayOpen-headingOne">
                 <div class="accordion-body">
-                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                    custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-4"><img class="img-fluid" src="https://placehold.co/800x800?text=Food"
+                                alt=""></div>
+                        <div class="col-lg-7">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, deleniti vitae explicabo
+                                    sit possimus impedit perspiciatis quam atque ducimus blanditiis laborum aliquam porro
+                                    repellendus aspernatur tenetur dolorem, dicta numquam accusamus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%"><span
+                                    class="fs-1 title text-center">25 ₺</span></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-4"><img class="img-fluid" src="https://placehold.co/800x800?text=Food"
+                                alt=""></div>
+                        <div class="col-lg-7">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, deleniti vitae explicabo
+                                    sit possimus impedit perspiciatis quam atque ducimus blanditiis laborum aliquam porro
+                                    repellendus aspernatur tenetur dolorem, dicta numquam accusamus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%"><span
+                                    class="fs-1 title text-center">25 ₺</span></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-4"><img class="img-fluid" src="https://placehold.co/800x800?text=Food"
+                                alt=""></div>
+                        <div class="col-lg-7">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, deleniti vitae explicabo
+                                    sit possimus impedit perspiciatis quam atque ducimus blanditiis laborum aliquam porro
+                                    repellendus aspernatur tenetur dolorem, dicta numquam accusamus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%"><span
+                                    class="fs-1 title text-center">25 ₺</span></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-4"><img class="img-fluid" src="https://placehold.co/800x800?text=Food"
+                                alt=""></div>
+                        <div class="col-lg-7">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, deleniti vitae explicabo
+                                    sit possimus impedit perspiciatis quam atque ducimus blanditiis laborum aliquam porro
+                                    repellendus aspernatur tenetur dolorem, dicta numquam accusamus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%"><span
+                                    class="fs-1 title text-center">25 ₺</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -37,11 +96,70 @@
             <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
                 aria-labelledby="panelsStayOpen-headingTwo">
                 <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                    custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-4"><img class="img-fluid" src="https://placehold.co/800x800?text=Food"
+                                alt=""></div>
+                        <div class="col-lg-7">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, deleniti vitae explicabo
+                                    sit possimus impedit perspiciatis quam atque ducimus blanditiis laborum aliquam porro
+                                    repellendus aspernatur tenetur dolorem, dicta numquam accusamus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%"><span
+                                    class="fs-1 title text-center">25 ₺</span></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-4"><img class="img-fluid" src="https://placehold.co/800x800?text=Food"
+                                alt=""></div>
+                        <div class="col-lg-7">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, deleniti vitae explicabo
+                                    sit possimus impedit perspiciatis quam atque ducimus blanditiis laborum aliquam porro
+                                    repellendus aspernatur tenetur dolorem, dicta numquam accusamus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%"><span
+                                    class="fs-1 title text-center">25 ₺</span></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-4"><img class="img-fluid" src="https://placehold.co/800x800?text=Food"
+                                alt=""></div>
+                        <div class="col-lg-7">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, deleniti vitae explicabo
+                                    sit possimus impedit perspiciatis quam atque ducimus blanditiis laborum aliquam porro
+                                    repellendus aspernatur tenetur dolorem, dicta numquam accusamus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%"><span
+                                    class="fs-1 title text-center">25 ₺</span></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-4"><img class="img-fluid" src="https://placehold.co/800x800?text=Food"
+                                alt=""></div>
+                        <div class="col-lg-7">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, deleniti vitae explicabo
+                                    sit possimus impedit perspiciatis quam atque ducimus blanditiis laborum aliquam porro
+                                    repellendus aspernatur tenetur dolorem, dicta numquam accusamus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%"><span
+                                    class="fs-1 title text-center">25 ₺</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -56,11 +174,70 @@
             <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
                 aria-labelledby="panelsStayOpen-headingThree">
                 <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
-                    plugin adds the appropriate classes that we use to style each element. These classes control the overall
-                    appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
-                    custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the transition does limit overflow.
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-4"><img class="img-fluid" src="https://placehold.co/800x800?text=Food"
+                                alt=""></div>
+                        <div class="col-lg-7">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, deleniti vitae explicabo
+                                    sit possimus impedit perspiciatis quam atque ducimus blanditiis laborum aliquam porro
+                                    repellendus aspernatur tenetur dolorem, dicta numquam accusamus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%"><span
+                                    class="fs-1 title text-center">25 ₺</span></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-4"><img class="img-fluid" src="https://placehold.co/800x800?text=Food"
+                                alt=""></div>
+                        <div class="col-lg-7">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, deleniti vitae explicabo
+                                    sit possimus impedit perspiciatis quam atque ducimus blanditiis laborum aliquam porro
+                                    repellendus aspernatur tenetur dolorem, dicta numquam accusamus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%"><span
+                                    class="fs-1 title text-center">25 ₺</span></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-4"><img class="img-fluid" src="https://placehold.co/800x800?text=Food"
+                                alt=""></div>
+                        <div class="col-lg-7">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, deleniti vitae explicabo
+                                    sit possimus impedit perspiciatis quam atque ducimus blanditiis laborum aliquam porro
+                                    repellendus aspernatur tenetur dolorem, dicta numquam accusamus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%"><span
+                                    class="fs-1 title text-center">25 ₺</span></div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-lg-3 mb-4"><img class="img-fluid" src="https://placehold.co/800x800?text=Food"
+                                alt=""></div>
+                        <div class="col-lg-7">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos, deleniti vitae explicabo
+                                    sit possimus impedit perspiciatis quam atque ducimus blanditiis laborum aliquam porro
+                                    repellendus aspernatur tenetur dolorem, dicta numquam accusamus.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="d-flex d-flex align-items-center" style="height: 75%"><span
+                                    class="fs-1 title text-center">25 ₺</span></div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
