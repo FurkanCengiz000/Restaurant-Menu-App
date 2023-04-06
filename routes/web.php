@@ -24,4 +24,10 @@ Route::get('/admin', function () {
     return view('admin.index');
 })->middleware(['auth'])->name('admin');
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/admin/addCategory', function () {
+    return view('admin.addCategory');
+})->middleware(['auth'])->name('admin.addCategory');
+
+Route::get('/admin/addFood', function () {
+    return view('admin.addFood');
+})->middleware(['auth'])->name('admin.addFood');
