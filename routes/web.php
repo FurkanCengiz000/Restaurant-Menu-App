@@ -1,5 +1,9 @@
 <?php
 
+use App\Http\Controllers\Admin;
+use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\FoodController;
+use App\Http\Controllers\Home;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -14,20 +18,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-})->name('home');
+Route::get('/', Home::class)->name('home');
+
+Route::get('/admin', Admin::class)->name('admin');
+
+Route::get('/admin/add/category', [CategoryController::class, 'create'])->name('admin.addCategory');
+
+Route::get('/admin/add/food', [FoodController::class, 'create'])->name('admin.addFood');
 
 Auth::routes(['register' => false, 'reset' => false]);
-
-Route::get('/admin', function () {
-    return view('admin.index');
-})->middleware(['auth'])->name('admin');
-
-Route::get('/admin/addCategory', function () {
-    return view('admin.addCategory');
-})->middleware(['auth'])->name('admin.addCategory');
-
-Route::get('/admin/addFood', function () {
-    return view('admin.addFood');
-})->middleware(['auth'])->name('admin.addFood');
