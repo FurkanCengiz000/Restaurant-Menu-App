@@ -2,3 +2,35 @@
     font-family: 'Alkatra', cursive;
     color: #bc4b51;
 }
+
+.button {
+
+    display: block;
+    background-color: #bc4b51;
+    border: 5px solid #F8FAFC;
+    padding:8% 8%;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    transition: transform ease 0.4s;
+
+}
+
+.button:hover {
+
+    transform: scale(0.9);
+    color: white;
+    border-color: transparent;
+
+}
+
+.btn-circle {
+	width: 30px!important;
+	height: 30px!important;
+	text-align: center!important;
+	padding: 6px 0!important;
+	font-size: 12px!important;
+	line-height: 1.428571429!important;
+	border-radius: 15px!important;
+}

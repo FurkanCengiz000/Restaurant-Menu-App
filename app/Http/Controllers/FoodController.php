@@ -11,9 +11,35 @@ class FoodController extends Controller
     {
         $this->middleware('auth');
     }
-    
+
     public function create()
     {
-        return view('admin.addFood');
+        return view('admin.food.add');
     }
+
+    public function store()
+    {
+
+    }
+
+    public function show()
+    {
+        return view('admin.food.show');
+    }
+
+    public function edit()
+    {
+        return view('admin.food.edit');
+    }
+
+    public function destroy()
+    {
+        
+    }
+
+    public function showDetails()
+    {
+        return view('admin.food.showDetails');
+    }
+
 }
