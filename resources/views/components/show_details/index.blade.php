@@ -1,4 +1,4 @@
-@props(['name' => 'Category'])
+@props(['name' => 'Category', 'id'=> null])
 <main class="py-5">
     <div class="container">
         <div class="row justify-content-md-center">
@@ -14,7 +14,15 @@
                                 <hr>
                                 <div class="form-group row mb-0">
                                     <div class="col-md-9 offset-md-3">
-                                        <a href="" class="btn btn-outline-warning">Edit</a>
+                                        <a
+                                        @if ($name == 'Category')
+                                            {{ 'true' }}
+                                            href="{{ route('categories.edit', $id) }}"
+                                        @else
+                                            href="{{ route('food.edit', $id) }}"
+                                            
+                                        @endif
+                                            class="btn btn-outline-warning">Edit</a>
 
                                         <a href="{{ url()->previous() }}" class="btn btn-outline-secondary">Cancel</a>
                                     </div>

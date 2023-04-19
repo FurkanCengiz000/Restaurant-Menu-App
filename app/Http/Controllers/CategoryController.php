@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\CategoryRequest;
+use App\Http\Requests\FoodRequest;
+use App\Models\Category;
+use App\Models\Food;
 use Illuminate\Http\Request;
 
 class CategoryController extends Controller
@@ -17,48 +21,48 @@ class CategoryController extends Controller
         return view('admin.category.add');
     }
     
-    public function store()
+    public function store(CategoryRequest $request)
     {
-
+        Category::create($request->validated());
+        return to_route('categories.show');
     }
     
-    public function edit()
+    public function edit(Category $category)
     {
-        return view('admin.category.edit');
+        return view('admin.category.edit', compact('category'));
     }
     
-    public function update()
+    public function update(CategoryRequest $request, Category $category)
     {
-
+        $category->update($request->validated());
+        return to_route('categories.show');
     }
     
-    public function show()
+    public function index()
     {
-        return view('admin.category.show');
+        $categories = Category::all();
+        return view('admin.category.show', compact('categories'));
     }
 
-    public function showDetails()
+    public function show(Category $category)
     {
-        return view('admin.category.showDetails');
+        return view('admin.category.showDetails', compact('category'));
     }
 
-    public function destroy()
+    public function destroy(Category $category)
     {
-
+        $category->delete();
+        return to_route('categories.show');
     }
     
-    public function showFood()
+    public function showFood(Category $category)
     {
-        return view('admin.category.showFood');
+        return view('admin.category.showFood', compact('category'));
     }
     
-    public function createFood()
+    public function createFood(Category $category)
     {
-        return view('admin.category.addFood');
+        return view('admin.category.addFood', compact('category'));
     }
     
-    public function storeFood()
-    {
-
-    }
 }

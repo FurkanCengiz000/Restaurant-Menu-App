@@ -4,26 +4,25 @@
 
 @section('content')
 
-    <x-show_details name="Food">
+    <x-show_details name="Food" id="{{ $food->id }}">
         <x-show_details.row name="Name">
-            Brownie
+            {{ $food->name }}
         </x-show_details.row>
 
         <x-show_details.row name="Description">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel id temporibus iste repudiandae fugit, modi ea quam
-            necessitatibus rerum praesentium.
+            {{ $food->description }}
         </x-show_details.row>
 
         <x-show_details.row name="Price">
-            25 $
+            {{ $food->price }} $
         </x-show_details.row>
 
         <x-show_details.row name="Category">
-            Desserts
+            {{ $food->category->name }}
         </x-show_details.row>
 
         <x-show_details.row name="Status">
-            Active
+            @if($food->is_active == 1) Active @else Not Active @endif
         </x-show_details.row>
         
     </x-showDetails>

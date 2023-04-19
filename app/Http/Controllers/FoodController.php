@@ -2,6 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\FoodRequest;
+use App\Models\Category;
+use App\Models\Food;
 use Illuminate\Http\Request;
 
 class FoodController extends Controller
@@ -14,32 +17,44 @@ class FoodController extends Controller
 
     public function create()
     {
-        return view('admin.food.add');
+        $categories = Category::all();
+        return view('admin.food.add', compact('categories'));
     }
 
-    public function store()
+    public function store(FoodRequest $request, Food $food)
     {
-
+        $food->create($request->validated());
+        return to_route('food.show');
     }
 
     public function show()
     {
-        return view('admin.food.show');
+        $foods = Food::all();
+        $categories = Category::all();
+        return view('admin.food.show', compact('foods', 'categories'));
     }
 
-    public function edit()
+    public function edit(Food $food)
     {
-        return view('admin.food.edit');
+        $categories = Category::all();
+        return view('admin.food.edit', compact('food', 'categories'));
     }
 
-    public function destroy()
+    public function update(FoodRequest $request, Food $food)
     {
-        
+        $food->update($request->validated());
+        return to_route('food.show');
     }
 
-    public function showDetails()
+    public function destroy(Food $food)
     {
-        return view('admin.food.showDetails');
+        $food->delete();
+        return to_route('food.show');
+    }
+
+    public function showDetails(Food $food)
+    {
+        return view('admin.food.showDetails', compact('food'));
     }
 
 }

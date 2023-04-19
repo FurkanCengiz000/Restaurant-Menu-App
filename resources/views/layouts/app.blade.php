@@ -41,6 +41,12 @@
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="{{ route('admin') }}">Admin Panel</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ route('categories.show') }}">Categories</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="{{ route('food.show') }}">Foods</a>
+                            </li>
 
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
