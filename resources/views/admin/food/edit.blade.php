@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="d-flex justify-content-center">
-        <x-form action="{{ route('food.update', $food->id) }}" method="PUT" class="bg-white p-5 shadow-lg rounded">
+        <x-form action="{{ route('food.update', $food->id) }}" method="PUT" class="bg-white p-5 shadow-lg rounded" file="yes">
             <div class="row mb-3">
                 <h3 class="text-center">Update Food</h3>
             </div>
@@ -60,7 +60,7 @@
                         <option @if($food->category->id == $category->id) selected @endif value="{{ $category->id }}">{{ $category->name }}</option>
                     @endforeach
                 </select>
-                @error('image')
+                @error('category_id')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>

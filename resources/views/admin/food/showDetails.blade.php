@@ -17,6 +17,11 @@
             {{ $food->price }} $
         </x-show_details.row>
 
+        <x-show_details.row name="Image">
+            <img src="{{ asset($food->image) }}" width="100" alt="Uploaded image">
+            
+        </x-show_details.row>
+
         <x-show_details.row name="Category">
             {{ $food->category->name }}
         </x-show_details.row>

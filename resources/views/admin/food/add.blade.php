@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="d-flex justify-content-center">
-        <x-form action="{{ route('food.store') }}" class="bg-white p-5 shadow-lg rounded">
+        <x-form action="{{ route('food.store') }}" class="bg-white p-5 shadow-lg rounded" file='yes'>
             <div class="row mb-3">
                 <h3 class="text-center">Add Food</h3>
             </div>

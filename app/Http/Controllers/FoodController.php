@@ -9,7 +9,7 @@ use Illuminate\Http\Request;
 
 class FoodController extends Controller
 {
-    
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -23,7 +23,13 @@ class FoodController extends Controller
 
     public function store(FoodRequest $request, Food $food)
     {
-        $food->create($request->validated());
+
+        $file = $request->file('image');
+        $path = $file->store('images', 'uploads');
+        $path = "storage/" . $path;
+        $validated_data = $request->validated();
+        $validated_data['image'] = $path;
+        $food->create($validated_data);
         return to_route('food.show');
     }
 
@@ -40,14 +46,34 @@ class FoodController extends Controller
         return view('admin.food.edit', compact('food', 'categories'));
     }
 
-    public function update(FoodRequest $request, Food $food)
+    public function update(Request $request, Food $food)
     {
-        $food->update($request->validated());
+        $validated = [
+            'name' => 'required|string|max:255',
+            'description' => 'required|string|max:255',
+            'price' => 'required|numeric',
+            'image' => 'image|mimes:jpg,png,jpeg,gif,svg|max:2048',
+            'category_id' => 'string|max:255',
+            'is_active' => 'required|string'
+        ];
+        
+        $validated_data = $request->validate($validated);
+        if ($request->hasFile('image'))
+        {
+            unlink(public_path($food->image));
+            $file = $request->file('image');
+            $path = $file->store('images', 'uploads');
+            $path = "storage/" . $path;
+            $validated_data = $request->validate($validated);
+            $validated_data['image'] = $path;
+        }
+        $food->update($validated_data);
         return to_route('food.show');
     }
 
     public function destroy(Food $food)
     {
+        unlink(public_path($food->image));
         $food->delete();
         return to_route('food.show');
     }
@@ -56,5 +82,4 @@ class FoodController extends Controller
     {
         return view('admin.food.showDetails', compact('food'));
     }
-
 }

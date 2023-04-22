@@ -25,6 +25,7 @@ class FoodRequest extends FormRequest
             'name' => 'required|string|max:255',
             'description' => 'required|string|max:255',
             'price' => 'required|numeric',
+            'image' => 'required|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
             'category_id' => 'string|max:255',
             'is_active' => 'required|string'
         ];

@@ -60,9 +60,4 @@ class CategoryController extends Controller
         return view('admin.category.showFood', compact('category'));
     }
     
-    public function createFood(Category $category)
-    {
-        return view('admin.category.addFood', compact('category'));
-    }
-    
 }

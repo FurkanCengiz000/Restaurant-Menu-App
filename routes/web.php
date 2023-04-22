@@ -35,7 +35,6 @@ Route::delete('admin/category/delete/{category:id}', [CategoryController::class,
 Route::get('admin/category/show/details/{category:id}', [CategoryController::class, 'show'])->name('category.showDetails');
 
 Route::get('admin/categories/foods/show/{category:id}', [CategoryController::class, 'showFood'])->name('categories.showFood');
-Route::get('admin/categories/food/add/{category:id}', [CategoryController::class, 'createFood'])->name('categories.createFood');
 
 Route::get('admin/food/add', [FoodController::class, 'create'])->name('food.add');
 Route::post('admin/food/store', [FoodController::class, 'store'])->name('food.store');
