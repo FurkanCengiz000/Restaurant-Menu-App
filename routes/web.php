@@ -36,6 +36,8 @@ Route::get('admin/category/show/details/{category:id}', [CategoryController::cla
 
 Route::get('admin/categories/foods/show/{category:id}', [CategoryController::class, 'showFood'])->name('categories.showFood');
 
+Route::put('admin/category/edit/checkbox/{category:id}', [CategoryController::class, 'checkboxUpdate'])->name('category.checkboxUpdate');
+
 Route::get('admin/food/add', [FoodController::class, 'create'])->name('food.add');
 Route::post('admin/food/store', [FoodController::class, 'store'])->name('food.store');
 
@@ -47,5 +49,7 @@ Route::put('admin/food/edit/{food:id}', [FoodController::class, 'update'])->name
 Route::get('admin/food/details/{food:id}', [FoodController::class, 'showDetails'])->name('food.showDetails');
 
 Route::delete('admin/food/delete/{food:id}', [FoodController::class, 'destroy'])->name('food.destroy');
+
+Route::put('admin/food/edit/checkbox/{food:id}', [FoodController::class, 'checkboxUpdate'])->name('food.checkboxUpdate');
 
 Auth::routes(['register' => false, 'reset' => false]);

@@ -82,4 +82,19 @@ class FoodController extends Controller
     {
         return view('admin.food.showDetails', compact('food'));
     }
+
+    public function checkboxUpdate(Food $food)
+    {
+        if($food->is_active == 0)
+        {
+            $food->update(['is_active' => 1]);
+        }
+        else
+        {
+            $food->update(['is_active' => 0]);
+        }
+
+        return redirect()->back();
+    }
+
 }

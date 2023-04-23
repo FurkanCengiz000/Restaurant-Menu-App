@@ -59,5 +59,19 @@ class CategoryController extends Controller
     {
         return view('admin.category.showFood', compact('category'));
     }
+
+    public function checkboxUpdate(Category $category)
+    {
+        if($category->is_active == 0)
+        {
+            $category->update(['is_active' => 1]);
+        }
+        else
+        {
+            $category->update(['is_active' => 0]);
+        }
+
+        return redirect()->back();
+    }
     
 }

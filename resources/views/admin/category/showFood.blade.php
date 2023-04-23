@@ -8,7 +8,8 @@
         @if (count($category->foods) > 0)
             <x-table title="{{ $category->name }}">
                 @foreach ($category->foods as $food)
-                    <x-table.tr name="{{ $food->name }}">
+                    <x-table.tr name="{{ $food->name }}" category_is_active="{{ $food->category->is_active }}"
+                        is_active="{{ $food->is_active }}" checkbox_url="{{ route('food.checkboxUpdate', $food->id) }}">
                         <x-button type="info" icon="eye" url="{{ route('food.showDetails', $food->id) }}" />
                         <x-button type="warning" icon="pen-to-square" url="{{ route('food.edit', $food->id) }}" />
                         <x-button.destroy type="danger" icon="trash" url="{{ route('food.destroy', $food->id) }}" />

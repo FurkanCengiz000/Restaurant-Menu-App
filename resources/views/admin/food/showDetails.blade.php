@@ -26,7 +26,11 @@
             {{ $food->category->name }}
         </x-show_details.row>
 
-        <x-show_details.row name="Status">
+        <x-show_details.row name="Food Category Status">
+            @if($food->category->is_active == 1) Active @else Not Active @endif
+        </x-show_details.row>
+
+        <x-show_details.row name="Food Status">
             @if($food->is_active == 1) Active @else Not Active @endif
         </x-show_details.row>
         
