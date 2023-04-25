@@ -42,5 +42,6 @@
                 </x-table.tr>
             @endforeach
         </x-table>
+        {{ $foods->links() }}
     </div>
 @endsection

@@ -35,7 +35,7 @@ class FoodController extends Controller
 
     public function show()
     {
-        $foods = Food::all();
+        $foods = Food::paginate(5);
         $categories = Category::all();
         return view('admin.food.show', compact('foods', 'categories'));
     }

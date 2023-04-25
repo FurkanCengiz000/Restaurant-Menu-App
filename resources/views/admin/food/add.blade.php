@@ -10,7 +10,7 @@
             </div>
             <div class="row mb-3">
                 <label for="name" class="form-label fs-5">Name</label>
-                <input class="form-control @error('name') is-invalid @enderror" name="name" placeholder="Add Name"
+                <input class="form-control @error('name') is-invalid @enderror" value="{{ old('name') }}" name="name" placeholder="Add Name"
                     type="text">
                 @error('name')
                     <div class="invalid-feedback">
@@ -23,7 +23,7 @@
             <div class="row mb-3">
                 <label for="description" class="form-label fs-5">Description</label>
                 <textarea class="form-control @error('description') is-invalid @enderror" placeholder="Add Description"
-                    name="description" cols="30" rows="5"></textarea>
+                    name="description" cols="30" rows="5">{{ old('description') }}</textarea>
                 @error('description')
                     <div class="invalid-feedback">
                         {{ $message }}
@@ -33,7 +33,7 @@
             
             <div class="row mb-3">
                 <label for="price" class="form-label fs-5">Price</label>
-                <input class="form-control @error('price') is-invalid @enderror" name="price"
+                <input class="form-control @error('price') is-invalid @enderror" value="{{ old('price') }}" name="price"
                     placeholder="Add Price" type="text">
                 @error('price')
                     <div class="invalid-feedback">
