@@ -36,8 +36,12 @@ class FoodController extends Controller
     public function show()
     {
         $foods = Food::paginate(5);
-        $categories = Category::all();
-        return view('admin.food.show', compact('foods', 'categories'));
+        $search = request()->query('s');
+        if($search)
+        {
+            $foods = Food::where('name', 'LIKE', '%' . $search . '%')->paginate(5);
+        }
+        return view('admin.food.show', compact('foods'));
     }
 
     public function edit(Food $food)

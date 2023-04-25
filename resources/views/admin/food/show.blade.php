@@ -13,22 +13,18 @@
                 <p class="text-end p-0 m-0 me-3"><a href="{{ route('food.add') }}" class="btn btn-success">Add Food</a></p>
             </div>
 
-            <div>
-                <select class="form-select" name="company_id">
-                    <option value="" selected="">All Categories</option>
-                    @foreach ($categories as $category)
-                        <option value="{{ $category->id }}">{{ $category->name }}</option>
-                    @endforeach
-                </select>
-            </div>
-
             <div class="ms-3">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search Food" aria-label="Search Food"
-                        aria-describedby="search-button">
-                    <button class="btn btn-outline-secondary" type="button" id="search-button"><i
-                            class="fa-solid fa-magnifying-glass"></i></button>
-                </div>
+                <form action="" method="GET" role="search">
+                    <div class="input-group">
+                        <input type="text" name="s" class="form-control" placeholder="Search Food"
+                            aria-label="Search Food" aria-describedby="search-button">
+                        <button class="btn btn-outline-secondary" type="button" id="search-button"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
+                        @if (request()->query('s'))
+                            <button class="btn btn-outline-secondary"><i class="fa fa-refresh"></i></button>
+                        @endif
+                    </div>
+                </form>
             </div>
         </div>
 
@@ -42,6 +38,6 @@
                 </x-table.tr>
             @endforeach
         </x-table>
-        {{ $foods->links() }}
+        {{ $foods->appends(['s' => request()->query('s')])->links() }}
     </div>
 @endsection
