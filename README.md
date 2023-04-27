@@ -1,66 +1,126 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Restaurant Menu App
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+#### I developed the restaurant menu application. You can add new categories and related foods. You can easily update your categories and dishes from the admin panel. You can change your category or food status to active or inactive. You can search for your meals from the Whole Foods Page and find and arrange your foods very easily. Restaurant menu application has user-friendly design and usage.
 
-## About Laravel
+<br />
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Home Page (Phone)
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<br />
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+![Home1](https://user-images.githubusercontent.com/126884885/234847348-ebadb6b7-7514-464a-81fe-56a7d2248303.png)
 
-## Learning Laravel
+<br />
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+![Home2](https://user-images.githubusercontent.com/126884885/234847393-fa26fd5b-6b5a-46e1-a2ba-840fe37a6982.png)
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+<br />
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+![Home3](https://user-images.githubusercontent.com/126884885/234847429-fc5a74ae-a19c-4b02-9c2b-7622ab76789e.png)
 
-## Laravel Sponsors
+<br />
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Home Page (Tablet or Desktop)
 
-### Premium Partners
+<br />
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+![Home4](https://user-images.githubusercontent.com/126884885/234847786-3db17573-e647-4ccf-a5ba-d74114d5a6ad.png)
 
-## Contributing
+<br />
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Login Page
 
-## Code of Conduct
+<br />
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+![Login](https://user-images.githubusercontent.com/126884885/234848208-4100de3d-cefe-4dc6-9e03-feae84e0f2e0.png)
 
-## Security Vulnerabilities
+<br />
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Admin Panel Page
+<br />
 
-## License
+![Admin Panel](https://user-images.githubusercontent.com/126884885/234850012-e89ba45d-b4ed-4a78-8a41-b8540baeb20c.png)
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+<br />
+
+## Add Category Page
+
+<br />
+
+![Add Category](https://user-images.githubusercontent.com/126884885/234850349-17e0d6ea-8089-4cc9-b19d-2dfd8d084f71.png)
+
+<br />
+
+## Show Categories Page
+
+<br />
+
+![Show Categories](https://user-images.githubusercontent.com/126884885/234850477-d35e5c20-4fa1-4230-b3ee-32faaf760469.png)
+
+<br />
+
+## Category Update Page
+
+<br />
+
+![Update Category](https://user-images.githubusercontent.com/126884885/234850642-d4cce403-8873-45d6-b23e-de4a64853792.png)
+
+<br />
+
+## Category Details Page
+
+<br />
+
+![Category Details](https://user-images.githubusercontent.com/126884885/234850949-7e91f229-72be-4817-a619-998b6035ad92.png)
+
+<br />
+
+## Category's Foods Page
+
+<br />
+
+![Cateogry Food Show](https://user-images.githubusercontent.com/126884885/234851177-0620da68-da85-4ece-8651-b401299eb811.png)
+
+<br />
+
+## Add Food Page
+
+<br />
+
+![Add Food1](https://user-images.githubusercontent.com/126884885/234851595-a01f9020-91a8-43bd-848c-b83fd99f248c.png)
+
+<br />
+
+![Add Food 2](https://user-images.githubusercontent.com/126884885/234851690-0bfdbbf0-31d5-4249-8882-feda6b44e66e.png)
+
+<br />
+
+## Show Food Page
+
+<br />
+
+![Show Food 1](https://user-images.githubusercontent.com/126884885/234852061-61f10632-ab91-4fec-904f-4b7291d13fac.png)
+
+<br />
+
+![Show Food 2](https://user-images.githubusercontent.com/126884885/234852118-c48c32ac-002e-40dd-b0f8-3c39ecb78c4d.png)
+
+<br />
+
+## Update Food Page
+
+<br />
+
+![Update Food 1](https://user-images.githubusercontent.com/126884885/234852254-7fb81663-a6c7-416b-9f60-8653fc2b9693.png)
+
+<br />
+
+![Update Food 2](https://user-images.githubusercontent.com/126884885/234852324-191ce517-ab27-4c74-ae06-59e9c30e553f.png)
+
+<br />
+
+## Food Details Page
+
+<br />
+
+![Food Details](https://user-images.githubusercontent.com/126884885/234852472-8b51c2fa-c323-41a5-a188-a81f2afc30f6.png)
